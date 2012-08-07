@@ -17,7 +17,7 @@ Jeweler::Tasks.new do |gem|
   gem.name = "pictos-icons"
   gem.homepage = "http://github.com/kristianmandrup/pictos-icons"
   gem.license = "MIT"
-  gem.summary = %Q{Pictos icons ready for use with Rails asset pipeline}
+  gem.summary = %Q{Pictos icon sprite set ready for use with Rails asset pipeline}
   gem.description = %Q{This icon set should cover most use cases :)}
   gem.email = "kmandrup@gmail.com"
   gem.authors = ["Kristian Mandrup"]
