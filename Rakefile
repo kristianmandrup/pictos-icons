@@ -17,33 +17,19 @@ Jeweler::Tasks.new do |gem|
   gem.name = "pictos-icons"
   gem.homepage = "http://github.com/kristianmandrup/pictos-icons"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Pictos icons ready for use with Rails asset pipeline}
+  gem.description = %Q{This icon set should cover most use cases :)}
   gem.email = "kmandrup@gmail.com"
   gem.authors = ["Kristian Mandrup"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
 
-require 'rspec/core'
-require 'rspec/core/rake_task'
-RSpec::Core::RakeTask.new(:spec) do |spec|
-  spec.pattern = FileList['spec/**/*_spec.rb']
-end
+# require 'rspec/core'
+# require 'rspec/core/rake_task'
+# RSpec::Core::RakeTask.new(:spec) do |spec|
+#   spec.pattern = FileList['spec/**/*_spec.rb']
+# end
 
-RSpec::Core::RakeTask.new(:rcov) do |spec|
-  spec.pattern = 'spec/**/*_spec.rb'
-  spec.rcov = true
-end
+# task :default => :spec
 
-task :default => :spec
-
-require 'rdoc/task'
-Rake::RDocTask.new do |rdoc|
-  version = File.exist?('VERSION') ? File.read('VERSION') : ""
-
-  rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "pictos-icons #{version}"
-  rdoc.rdoc_files.include('README*')
-  rdoc.rdoc_files.include('lib/**/*.rb')
-end
