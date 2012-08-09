@@ -16,17 +16,19 @@ Simply require the css (or scss) stylesheet in your stylesheet manifest, fx `app
 Use like this:
 
 ```html
-<ul class='pictos-icons'>
-  <li class='pictos action'></li>
+<ul class='pictos'>
+  <li class='pic action'></li>
 </ul>
 ```
 
 Or in HAML
 
 ```haml
-%ul.pictos-icons
-  %li.pictos.action
+%ul.pictos
+  %li.pic.action
 ```
+
+You don't have to use an unordered list with list items, but it gives a nice result. You simply have to ensure that you are using block elements that can take a background image ;).
 
 See the *world-flags* gem for more info, tips etc. Also includes some nice sprite utils for generating sprite sets of different sizes :)
 
