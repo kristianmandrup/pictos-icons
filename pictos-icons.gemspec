@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "pictos-icons"
-  s.version = "0.1.0"
+  s.version = "0.2.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Kristian Mandrup"]
-  s.date = "2012-08-07"
+  s.date = "2012-08-09"
   s.description = "This icon set should cover most use cases :)"
   s.email = "kmandrup@gmail.com"
   s.extra_rdoc_files = [
@@ -20,13 +20,24 @@ Gem::Specification.new do |s|
     ".document",
     ".rspec",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.md",
     "Rakefile",
     "VERSION",
     "lib/pictos-icons.rb",
+    "lib/pictos-icons/tools/resize_css.rb",
+    "pictos-icons.gemspec",
     "spec/spec_helper.rb",
-    "vendor/assets/images/pictos-sprite.png",
+    "vendor/assets/images/pictos-15.png",
+    "vendor/assets/images/pictos-30.png",
+    "vendor/assets/images/pictos-60.png",
+    "vendor/assets/stylesheets/pictos-15.css",
+    "vendor/assets/stylesheets/pictos-15.css.scss",
+    "vendor/assets/stylesheets/pictos-30.css",
+    "vendor/assets/stylesheets/pictos-30.css.scss",
+    "vendor/assets/stylesheets/pictos-60.css",
+    "vendor/assets/stylesheets/pictos-60.css.scss",
     "vendor/assets/stylesheets/pictos.css",
     "vendor/assets/stylesheets/pictos.css.scss"
   ]
@@ -34,7 +45,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.24"
-  s.summary = "Pictos icons ready for use with Rails asset pipeline"
+  s.summary = "Pictos icon sprite set ready for use with Rails asset pipeline"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
